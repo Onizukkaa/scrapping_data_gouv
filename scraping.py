@@ -27,7 +27,7 @@ def scrapping():
     
     # Create variable for driver
 
-    driver = webdriver.Chrome(executable_path = "D:/programmation/Alternance/01_Le_lab_de_lendo/05_outil_diag/outil_diag_lelabdelendo/scrapping/chromedriver.exe")
+    driver = webdriver.Chrome(executable_path = "chromedriver.exe")
     driver.get(url)
     
     b = 2
@@ -49,8 +49,8 @@ def combine_multi_csv():
     
     # Access
 
-    path_dowload_data = "C:/Users/joach/Downloads/"
-    path_save_data = "D:/programmation/Alternance/01_Le_lab_de_lendo/05_outil_diag/outil_diag_lelabdelendo/Data/08_scrapping/"
+    path_dowload_data = ""
+    path_save_data = ""
     
     csv_files = glob.glob(path_dowload_data + "*.{}".format("csv"))
     #print(csv_files)
